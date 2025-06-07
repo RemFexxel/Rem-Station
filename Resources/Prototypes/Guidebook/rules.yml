@@ -12,7 +12,7 @@
   id: RemStationLRPRuleset
   name: guide-entry-rules-RemStationLRP
   ruleEntry: true
-  priority: 10
+  priority: 20
   text: "/ServerInfo/Guidebook/ServerRules/RemStationLRPRules.xml"
 
 - type: guideEntry
