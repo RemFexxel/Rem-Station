@@ -16,7 +16,7 @@ RELEASE_DIR = "release"
 # Forks should change these to publish to their own infrastructure.
 #
 ROBUST_CDN_URL = "https://cdn.remstations.com/"
-FORK_ID = "MyCoolFork"
+FORK_ID = "RemStation"
 
 def main():
     parser = argparse.ArgumentParser()
