@@ -6,7 +6,14 @@
   name: guide-entry-rules
   ruleEntry: true
   priority: 10
-  text: "/ServerInfo/Guidebook/ServerRules/DefaultRules.xml"
+  text: "/ServerInfo/Guidebook/ServerRules/RemStationLRPRules.xml"
+
+- type: guideEntry # Default for forks and stuff. Should not be listed anywhere if the server is using a custom ruleset.
+  id: RemStationLRPRuleset
+  name: guide-entry-rules-RemStationLRP
+  ruleEntry: true
+  priority: 20
+  text: "/ServerInfo/Guidebook/ServerRules/RemStationLRPRules.xml"
 
 - type: guideEntry
   id: CoreRuleset

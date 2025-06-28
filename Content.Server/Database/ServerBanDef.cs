@@ -3,7 +3,8 @@ using Content.Shared.CCVar;
 using Content.Shared.Database;
 using Robust.Shared.Configuration;
 using Robust.Shared.Network;
-
+using System.Net.Http;
+using System.Text.Json;
 
 namespace Content.Server.Database
 {
@@ -38,12 +39,12 @@ namespace Content.Server.Database
             ServerUnbanDef? unban,
             ServerBanExemptFlags exemptFlags = default)
         {
-            if (userId == null && address == null && hwId ==  null)
+            if (userId == null && address == null && hwId == null)
             {
                 throw new ArgumentException("Must have at least one of banned user, banned address or hardware ID");
             }
 
-            if (address is {} addr && addr.Item1.IsIPv4MappedToIPv6)
+            if (address is { } addr && addr.Item1.IsIPv4MappedToIPv6)
             {
                 // Fix IPv6-mapped IPv4 addresses
                 // So that IPv4 addresses are consistent between separate-socket and dual-stack socket modes.
@@ -84,10 +85,39 @@ namespace Content.Server.Database
 
             return $"""
                    {loc.GetString("ban-banned-1")}
-                   {loc.GetString("ban-banned-2", ("reason", Reason))}
+                   {loc.GetString("ban-banned-2", ("adminName", GetUsername(BanningAdmin.ToString())))}
+                   {loc.GetString("ban-banned-3", ("reason", Reason))}
                    {expires}
-                   {loc.GetString("ban-banned-3")}
+                   {loc.GetString("ban-banned-4")}
                    """;
+        }
+
+        static string GetUsername(string? userId)
+        {
+            if (userId == null)
+            {
+                return "Unknown";
+            }
+
+            using (var client = new HttpClient())
+            {
+                string apiUrl = "https://auth.spacestation14.com/api/query/userid?userid=" + userId;
+
+                HttpResponseMessage response = client.Send(new HttpRequestMessage(HttpMethod.Get, apiUrl));
+
+                if (response.IsSuccessStatusCode)
+                {
+                    string jsonResponse = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
+                    var jsonObject = JsonDocument.Parse(jsonResponse).RootElement;
+
+                    return jsonObject.GetProperty("userName").GetString() ?? "Unknown";
+
+                }
+                else
+                {
+                    return "Unknown";
+                }
+            }
         }
     }
 }
