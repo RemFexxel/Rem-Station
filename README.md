@@ -12,7 +12,7 @@ If you want to host or create content for SS14, this is the repo you need. It co
 
 <div class="header" align="center">  
 
-[Space Station 14 Website](https://spacestation14.com/) | [Space Station 14 Discord Server](https://discord.gg/KWqH2HSFtD) | [Rem Station Discord Server](https://discord.gg/pxuFEDZFyM]) |[Forum](https://discourse.remstations.com/) | [Patreon](https://www.patreon.com/RemStation) | [Steam](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Standalone Download](https://spacestation14.com/about/nightlies/)  
+[Space Station 14 Website](https://spacestation14.com/) | [Space Station 14 Discord Server](https://discord.gg/KWqH2HSFtD) | [Rem Station Discord Server](https://discord.gg/pxuFEDZFyM]) | [Forum](https://discourse.remstations.com/) | [Patreon](https://www.patreon.com/RemStation) | [Steam](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Standalone Download](https://spacestation14.com/about/nightlies/)  
 
 </div>
 
