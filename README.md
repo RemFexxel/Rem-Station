@@ -4,7 +4,7 @@
 
 Space Station 14 is a remake of SS13 that runs on [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), our homegrown engine written in C#.
 
-This is the primary repo for Space Station 14. To prevent people forking RobustToolbox, a "content" pack is loaded by the client and server. This content pack contains everything needed to play the game on one specific server.
+This is the primary repo for Space Station 14. To prevent people from forking RobustToolbox, a "content" pack is loaded by the client and server. This content pack contains everything needed to play the game on one specific server.
 
 If you want to host or create content for SS14, this is the repo you need. It contains both RobustToolbox and the content pack for development of new content packs.
 
@@ -12,18 +12,18 @@ If you want to host or create content for SS14, this is the repo you need. It co
 
 <div class="header" align="center">  
 
-[Website](https://spacestation14.com/) | [Space Station 14 Discord Server](https://discord.gg/KWqH2HSFtD) | [Rem Station Discord Server](https://discord.gg/pxuFEDZFyM]) |[Forum](https://discourse.remstations.com/) | [Mastodon](https://mastodon.gamedev.place/@spacestation14) | [Lemmy](https://lemmy.spacestation14.com/) | [Patreon](https://www.patreon.com/spacestation14) | [Steam](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Standalone Download](https://spacestation14.com/about/nightlies/)  
+[Space Station 14 Website](https://spacestation14.com/) | [Space Station 14 Discord Server](https://discord.gg/KWqH2HSFtD) | [Rem Station Discord Server](https://discord.gg/pxuFEDZFyM]) |[Forum](https://discourse.remstations.com/) | [Patreon](https://www.patreon.com/RemStation) | [Steam](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Standalone Download](https://spacestation14.com/about/nightlies/)  
 
 </div>
 
 ## Documentation/Wiki
 
-The [Space Station14 Docs Site](https://docs.spacestation14.com/) has documentation on SS14's content, engine, game design, and more.  
+The [Space Station 14 Docs Site](https://docs.spacestation14.com/) has documentation on SS14's content, engine, game design, and more.  
 Additionally, see these resources for license and attribution information:  
 - [Robust Generic Attribution](https://docs.spacestation14.com/en/specifications/robust-generic-attribution.html)  
 - [Robust Station Image](https://docs.spacestation14.com/en/specifications/robust-station-image.html)
 
-We also have lots of resources for new contributors to the project.
+There are lots of resources for new contributors to the project.
 
 ## Contributing
 
