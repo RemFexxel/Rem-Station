@@ -12,7 +12,7 @@ If you want to host or create content for SS14, this is the repo you need. It co
 
 <div class="header" align="center">  
 
-[Website](https://playss14.com/) | [Discord](https://discord.gg/ss14) | [Forum](https://forum.playss14.com/) |  [Standalone Download](https://playss14.com/download/)  
+[Website](https://playss14.com/) | [Discord](https://discord.gg/ss14) | [Forum](https://forum.playss14.com/) | [Standalone Download](https://playss14.com/download/)  
 
 </div>
 
